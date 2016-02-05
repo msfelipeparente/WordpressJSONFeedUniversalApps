@@ -63,7 +63,6 @@ namespace NavigationMenuSample.Views
                     dtString = dtString.ToString().Substring(0, dateMax);
                     this.Items.Add(new ItemViewModel() { LineOne = post.title, LineTwo = dtString, Thumbnail = post.thumbnail, ID = post.id });
 
-
                 }
 
             }
