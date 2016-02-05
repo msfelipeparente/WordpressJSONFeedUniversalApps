@@ -26,5 +26,15 @@ namespace NavigationMenuSample.Views
         {
             this.InitializeComponent();
         }
+        private void BasicPage_Loaded(object sender, RoutedEventArgs e)
+        {
+            /*
+            if (!App.ViewModel.IsDataLoaded)
+            {
+                App.ViewModel.LoadData();
+            }*/
+        }
     }
+
 }
+

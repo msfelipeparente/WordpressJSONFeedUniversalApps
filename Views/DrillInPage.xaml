@@ -19,43 +19,24 @@
                 <TextBlock x:Name="title" Style="{ThemeResource PageTitleTextBlockStyle}" Text="DRILL-IN PAGE"/>
             </ctl:PageHeader.HeaderContent>
         </ctl:PageHeader>
-
-        <ListView Grid.Row="1" Header="Click An Item To Drill In"
-                  EntranceNavigationTransitionInfo.IsTargetElement="True"
-                  IsItemClickEnabled="True"
-                  ItemClick="ListView_ItemClick">
-            <ListView.HeaderTemplate>
+        <ListBox x:Name="lstFeed" Margin="0,0,-12,0" ItemsSource="{Binding Items}" IsSynchronizedWithCurrentItem="False" >
+            <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <TextBlock Style="{ThemeResource BodyTextBlockStyle}" Margin="12,4" Text="{Binding}"/>
+                    <StackPanel Tag="{Binding Path=ID}" VerticalAlignment="Top" Height="300" Width="456" Margin="12,12,0,12" >
+                        <Grid Width="455" Height="225" Background="Gray">
+                            <Image Source="/Assets/Image.png" Height="100" Width="100" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,-30,0,0" />
+                            <Image x:Name="imgFeed2" Source="{Binding Thumbnail}" Width="455" Height="225" />
+                        </Grid>
+                        <StackPanel Background="White" Height="130" Margin="0,-55,0,0">
+                            <Grid Height="106" Margin="12">
+                                <TextBlock Text="{Binding LineOne}" Foreground="#FF666666" TextWrapping="Wrap" HorizontalAlignment="Center" Margin="20,0" />
+                                <TextBlock Text="{Binding LineTwo}" Foreground="#0099FF" VerticalAlignment="Bottom" HorizontalAlignment="Right" FontSize="15" />
+                            </Grid>
+                        </StackPanel>
+                    </StackPanel>
                 </DataTemplate>
-            </ListView.HeaderTemplate>
-            <ListViewItem>Item 1</ListViewItem>
-            <ListViewItem>Item 2</ListViewItem>
-            <ListViewItem>Item 3</ListViewItem>
-            <ListViewItem>Item 4</ListViewItem>
-            <ListViewItem>Item 5</ListViewItem>
-            <ListViewItem>Item 6</ListViewItem>
-            <ListViewItem>Item 7</ListViewItem>
-            <ListViewItem>Item 8</ListViewItem>
-            <ListViewItem>Item 9</ListViewItem>
-            <ListViewItem>Item 10</ListViewItem>
-            <ListViewItem>Item 11</ListViewItem>
-            <ListViewItem>Item 12</ListViewItem>
-            <ListViewItem>Item 13</ListViewItem>
-            <ListViewItem>Item 14</ListViewItem>
-            <ListViewItem>Item 15</ListViewItem>
-            <ListViewItem>Item 16</ListViewItem>
-            <ListViewItem>Item 17</ListViewItem>
-            <ListViewItem>Item 18</ListViewItem>
-            <ListViewItem>Item 19</ListViewItem>
-            <ListViewItem>Item 20</ListViewItem>
-            <ListViewItem>Item 21</ListViewItem>
-            <ListViewItem>Item 22</ListViewItem>
-            <ListViewItem>Item 23</ListViewItem>
-            <ListViewItem>Item 24</ListViewItem>
-            <ListViewItem>Item 25</ListViewItem>
-        </ListView>
-
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
 
 </Page>
