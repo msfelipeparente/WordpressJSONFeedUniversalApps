@@ -32,7 +32,7 @@ namespace NavigationMenuSample
                 new NavMenuItem()
                 {
                     Symbol = Symbol.Contact,
-                    Label = "Basic Page",
+                    Label = "Página Básica",
                     DestPage = typeof(BasicPage)
                 },
                 new NavMenuItem()

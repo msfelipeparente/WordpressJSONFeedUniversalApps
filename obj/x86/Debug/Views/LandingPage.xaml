@@ -1,0 +1,109 @@
+﻿<Page
+    x:Class="NavigationMenuSample.Views.LandingPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NavigationMenuSample"
+    xmlns:c="using:NavigationMenuSample.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}"
+    mc:Ignorable="d">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <c:PageHeader x:ConnectionId='1' x:Name="pageHeader">
+            <c:PageHeader.HeaderContent>
+                <TextBlock x:ConnectionId='5' x:Name="title" Style="{ThemeResource PageTitleTextBlockStyle}" Text="PÁGINA INICIAL"/>
+            </c:PageHeader.HeaderContent>
+        </c:PageHeader>
+
+        <ScrollViewer Grid.Row="1" EntranceNavigationTransitionInfo.IsTargetElement="True" Margin="12,4,0,0">
+
+            <StackPanel >
+                <ListBox x:ConnectionId='2' x:Name="lstFeed" Margin="0,0,-12,0" ItemsSource="{Binding Items}" IsSynchronizedWithCurrentItem="False" >
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Tag="{Binding Path=ID}" VerticalAlignment="Top" Height="300" Width="456" Margin="12,12,0,12" >
+                                <Grid Width="455" Height="225" Background="Gray">
+                                    <Image Source="/Assets/Image.png" Height="100" Width="100" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,-30,0,0" />
+                                    <Image x:Name="imgFeed2" Source="{Binding Thumbnail}" Width="455" Height="225" />
+                                </Grid>
+                                <StackPanel Background="White" Height="130" Margin="0,-55,0,0">
+                                    <Grid Height="106" Margin="12">
+                                        <TextBlock Text="{Binding LineOne}" Foreground="#FF666666" TextWrapping="Wrap" HorizontalAlignment="Center" Margin="20,0" />
+                                        <TextBlock Text="{Binding LineTwo}" Foreground="#0099FF" VerticalAlignment="Bottom" HorizontalAlignment="Right" FontSize="15" />
+                                    </Grid>
+                                </StackPanel>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+                <TextBlock Style="{ThemeResource TitleTextBlockStyle}">Postagens</TextBlock>
+                <TextBlock Style="{ThemeResource BodyTextBlockStyle}" Margin="12,4">Aqui ficarão as postagens do TNW.</TextBlock>
+
+                <TextBlock Style="{ThemeResource SubtitleTextBlockStyle}" Margin="12,12,12,4">Teste</TextBlock>
+                <TextBlock Style="{ThemeResource BodyTextBlockStyle}" Margin="12,4">
+                    ÁREA DE POSTS
+                </TextBlock>
+
+                <TextBlock  Text="{Binding LineOne}" Foreground="#0099FF" VerticalAlignment="Bottom" HorizontalAlignment="Right" FontSize="15" RenderTransformOrigin="0.5,0.5" Width="338" >
+                    <TextBlock.RenderTransform>
+                        <CompositeTransform ScaleX="-1"/>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+                <TextBlock  Text="{Binding LineOne}" Foreground="#0099FF" VerticalAlignment="Bottom" HorizontalAlignment="Right" FontSize="15" RenderTransformOrigin="0.5,0.5" Width="341" Height="480" >
+                    <TextBlock.RenderTransform>
+                        <CompositeTransform ScaleX="-1"/>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+
+                <StackPanel  Visibility="Collapsed" VerticalAlignment="Top" Height="273" Width="456" Margin="12,12,0,12">
+                    <StackPanel.Background>
+                        <ImageBrush x:ConnectionId='4' x:Name="imgFeed2" Stretch="Fill" ImageSource="{Binding Thumbnail}" />
+                    </StackPanel.Background>
+                    <StackPanel  VerticalAlignment="Bottom" Margin="0,153,0,0" Height="100">
+                        <StackPanel.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,-2">
+                                <GradientStop Offset="0"/>
+                                <GradientStop Color="Black" Offset="1"/>
+                            </LinearGradientBrush>
+                        </StackPanel.Background>
+                        <TextBlock Foreground="White" Text="teste" TextWrapping="Wrap"  Margin="12,60,12,0" VerticalAlignment="Bottom" />
+                    </StackPanel>
+                </StackPanel>
+                <ListBox  Margin="0,0,-12,0" ItemsSource="{Binding RootObject}" IsSynchronizedWithCurrentItem="False" >
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Tag="{Binding Path=ID}" VerticalAlignment="Top" Height="300" Width="456" Margin="12,12,0,12" >
+                                <Image x:Name="imgFeed2" Source="{Binding Thumbnail}" Width="455" Height="225" />
+                                <StackPanel Background="White" Height="130" Margin="0,-55,0,0">
+                                    <Grid Height="106" Margin="12">
+                                        <TextBlock Text="teste" Foreground="#FF666666" TextWrapping="Wrap" HorizontalAlignment="Center" Margin="20,0" />
+                                        <TextBlock Text="descrição" Foreground="#0099FF" VerticalAlignment="Bottom" HorizontalAlignment="Right" FontSize="15" />
+                                    </Grid>
+                                    <GridView x:Name="TitleofPost" Margin="20,10,10,10" IsItemClickEnabled="True">
+                                        <GridView.ItemTemplate>
+                                            <DataTemplate>
+                                                <Image Width="400" Height="400" Source="{Binding title}" />
+                                            </DataTemplate>
+
+                                        </GridView.ItemTemplate>
+
+                                    </GridView>
+
+                                </StackPanel>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+                <TextBox x:ConnectionId='3' x:Name="textBox" TextWrapping="Wrap" Text="TextBox"/>
+
+
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
+

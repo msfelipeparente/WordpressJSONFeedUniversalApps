@@ -1,0 +1,1 @@
+C:\Users\felipe\Downloads\Windows-universal-samples-master\Windows-universal-samples-master\Samples\XamlNavigation\cs\NavigationMenu.csproj;arm

@@ -1,0 +1,9 @@
+App.xbf
+AppShell.xbf
+Controls\PageHeader.xbf
+Styles\Styles.xbf
+Views\BasicPage.xbf
+Views\BasicSubPage.xbf
+Views\CommandBarPage.xbf
+Views\DrillInPage.xbf
+Views\LandingPage.xbf
