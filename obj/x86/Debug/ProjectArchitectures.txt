@@ -1,1 +1,1 @@
-C:\Users\felipe\Downloads\Windows-universal-samples-master\Windows-universal-samples-master\Samples\XamlNavigation\cs\NavigationMenu.csproj;x86
+C:\Users\felipe\Documents\GitHub\WordpressJSONFeedUniversalApps\WordpressJSONFeedUniversalApps.csproj;x86

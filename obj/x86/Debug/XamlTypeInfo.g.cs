@@ -13,7 +13,7 @@ namespace NavigationMenuSample
 {
     public partial class App : global::Windows.UI.Xaml.Markup.IXamlMetadataProvider
     {
-    private global::NavigationMenuSample.NavigationMenu_XamlTypeInfo.XamlTypeInfoProvider _provider;
+    private global::NavigationMenuSample.WordpressJSONFeedUniversalApps_XamlTypeInfo.XamlTypeInfoProvider _provider;
 
         /// <summary>
         /// GetXamlType(Type)
@@ -22,7 +22,7 @@ namespace NavigationMenuSample
         {
             if(_provider == null)
             {
-                _provider = new global::NavigationMenuSample.NavigationMenu_XamlTypeInfo.XamlTypeInfoProvider();
+                _provider = new global::NavigationMenuSample.WordpressJSONFeedUniversalApps_XamlTypeInfo.XamlTypeInfoProvider();
             }
             return _provider.GetXamlTypeByType(type);
         }
@@ -34,7 +34,7 @@ namespace NavigationMenuSample
         {
             if(_provider == null)
             {
-                _provider = new global::NavigationMenuSample.NavigationMenu_XamlTypeInfo.XamlTypeInfoProvider();
+                _provider = new global::NavigationMenuSample.WordpressJSONFeedUniversalApps_XamlTypeInfo.XamlTypeInfoProvider();
             }
             return _provider.GetXamlTypeByName(fullName);
         }
@@ -49,7 +49,7 @@ namespace NavigationMenuSample
     }
 }
 
-namespace NavigationMenuSample.NavigationMenu_XamlTypeInfo
+namespace NavigationMenuSample.WordpressJSONFeedUniversalApps_XamlTypeInfo
 {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -212,8 +212,8 @@ namespace NavigationMenuSample.NavigationMenu_XamlTypeInfo
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
-            global::NavigationMenuSample.NavigationMenu_XamlTypeInfo.XamlSystemBaseType xamlType = null;
-            global::NavigationMenuSample.NavigationMenu_XamlTypeInfo.XamlUserType userType;
+            global::NavigationMenuSample.WordpressJSONFeedUniversalApps_XamlTypeInfo.XamlSystemBaseType xamlType = null;
+            global::NavigationMenuSample.WordpressJSONFeedUniversalApps_XamlTypeInfo.XamlUserType userType;
             string typeName = _typeNameTable[typeIndex];
             global::System.Type type = _typeTable[typeIndex];
 
@@ -221,7 +221,7 @@ namespace NavigationMenuSample.NavigationMenu_XamlTypeInfo
             {
 
             case 0:   //  NavigationMenuSample.Controls.PageHeader
-                userType = new global::NavigationMenuSample.NavigationMenu_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType = new global::NavigationMenuSample.WordpressJSONFeedUniversalApps_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
                 userType.Activator = Activate_0_PageHeader;
                 userType.AddMemberName("HeaderContent");
                 userType.SetIsLocalType();
@@ -229,41 +229,41 @@ namespace NavigationMenuSample.NavigationMenu_XamlTypeInfo
                 break;
 
             case 1:   //  Windows.UI.Xaml.Controls.UserControl
-                xamlType = new global::NavigationMenuSample.NavigationMenu_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::NavigationMenuSample.WordpressJSONFeedUniversalApps_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 2:   //  Windows.UI.Xaml.UIElement
-                xamlType = new global::NavigationMenuSample.NavigationMenu_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::NavigationMenuSample.WordpressJSONFeedUniversalApps_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 3:   //  NavigationMenuSample.Views.BasicPage
-                userType = new global::NavigationMenuSample.NavigationMenu_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType = new global::NavigationMenuSample.WordpressJSONFeedUniversalApps_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_3_BasicPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
             case 4:   //  Windows.UI.Xaml.Controls.Page
-                xamlType = new global::NavigationMenuSample.NavigationMenu_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::NavigationMenuSample.WordpressJSONFeedUniversalApps_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 5:   //  NavigationMenuSample.Controls.NavMenuListView
-                userType = new global::NavigationMenuSample.NavigationMenu_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.ListView"));
+                userType = new global::NavigationMenuSample.WordpressJSONFeedUniversalApps_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.ListView"));
                 userType.Activator = Activate_5_NavMenuListView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
             case 6:   //  Windows.UI.Xaml.Controls.ListView
-                xamlType = new global::NavigationMenuSample.NavigationMenu_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::NavigationMenuSample.WordpressJSONFeedUniversalApps_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 7:   //  Windows.UI.Xaml.Controls.ItemsControl
-                xamlType = new global::NavigationMenuSample.NavigationMenu_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::NavigationMenuSample.WordpressJSONFeedUniversalApps_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 8:   //  NavigationMenuSample.AppShell
-                userType = new global::NavigationMenuSample.NavigationMenu_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType = new global::NavigationMenuSample.WordpressJSONFeedUniversalApps_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_8_AppShell;
                 userType.AddMemberName("AppFrame");
                 userType.AddMemberName("TogglePaneButtonRect");
@@ -272,22 +272,22 @@ namespace NavigationMenuSample.NavigationMenu_XamlTypeInfo
                 break;
 
             case 9:   //  Windows.UI.Xaml.Controls.Frame
-                xamlType = new global::NavigationMenuSample.NavigationMenu_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::NavigationMenuSample.WordpressJSONFeedUniversalApps_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 10:   //  Windows.Foundation.Rect
-                xamlType = new global::NavigationMenuSample.NavigationMenu_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::NavigationMenuSample.WordpressJSONFeedUniversalApps_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 11:   //  NavigationMenuSample.Views.CommandBarPage
-                userType = new global::NavigationMenuSample.NavigationMenu_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType = new global::NavigationMenuSample.WordpressJSONFeedUniversalApps_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_11_CommandBarPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
             case 12:   //  NavigationMenuSample.Views.BasicSubPage
-                userType = new global::NavigationMenuSample.NavigationMenu_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType = new global::NavigationMenuSample.WordpressJSONFeedUniversalApps_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_12_BasicSubPage;
                 userType.AddMemberName("Message");
                 userType.SetIsLocalType();
@@ -295,18 +295,18 @@ namespace NavigationMenuSample.NavigationMenu_XamlTypeInfo
                 break;
 
             case 13:   //  String
-                xamlType = new global::NavigationMenuSample.NavigationMenu_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::NavigationMenuSample.WordpressJSONFeedUniversalApps_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 14:   //  NavigationMenuSample.Views.DrillInPage
-                userType = new global::NavigationMenuSample.NavigationMenu_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType = new global::NavigationMenuSample.WordpressJSONFeedUniversalApps_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_14_DrillInPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
             case 15:   //  NavigationMenuSample.Views.LandingPage
-                userType = new global::NavigationMenuSample.NavigationMenu_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType = new global::NavigationMenuSample.WordpressJSONFeedUniversalApps_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_15_LandingPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
@@ -349,33 +349,33 @@ namespace NavigationMenuSample.NavigationMenu_XamlTypeInfo
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
-            global::NavigationMenuSample.NavigationMenu_XamlTypeInfo.XamlMember xamlMember = null;
-            global::NavigationMenuSample.NavigationMenu_XamlTypeInfo.XamlUserType userType;
+            global::NavigationMenuSample.WordpressJSONFeedUniversalApps_XamlTypeInfo.XamlMember xamlMember = null;
+            global::NavigationMenuSample.WordpressJSONFeedUniversalApps_XamlTypeInfo.XamlUserType userType;
 
             switch (longMemberName)
             {
             case "NavigationMenuSample.Controls.PageHeader.HeaderContent":
-                userType = (global::NavigationMenuSample.NavigationMenu_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NavigationMenuSample.Controls.PageHeader");
-                xamlMember = new global::NavigationMenuSample.NavigationMenu_XamlTypeInfo.XamlMember(this, "HeaderContent", "Windows.UI.Xaml.UIElement");
+                userType = (global::NavigationMenuSample.WordpressJSONFeedUniversalApps_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NavigationMenuSample.Controls.PageHeader");
+                xamlMember = new global::NavigationMenuSample.WordpressJSONFeedUniversalApps_XamlTypeInfo.XamlMember(this, "HeaderContent", "Windows.UI.Xaml.UIElement");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_0_PageHeader_HeaderContent;
                 xamlMember.Setter = set_0_PageHeader_HeaderContent;
                 break;
             case "NavigationMenuSample.AppShell.AppFrame":
-                userType = (global::NavigationMenuSample.NavigationMenu_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NavigationMenuSample.AppShell");
-                xamlMember = new global::NavigationMenuSample.NavigationMenu_XamlTypeInfo.XamlMember(this, "AppFrame", "Windows.UI.Xaml.Controls.Frame");
+                userType = (global::NavigationMenuSample.WordpressJSONFeedUniversalApps_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NavigationMenuSample.AppShell");
+                xamlMember = new global::NavigationMenuSample.WordpressJSONFeedUniversalApps_XamlTypeInfo.XamlMember(this, "AppFrame", "Windows.UI.Xaml.Controls.Frame");
                 xamlMember.Getter = get_1_AppShell_AppFrame;
                 xamlMember.SetIsReadOnly();
                 break;
             case "NavigationMenuSample.AppShell.TogglePaneButtonRect":
-                userType = (global::NavigationMenuSample.NavigationMenu_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NavigationMenuSample.AppShell");
-                xamlMember = new global::NavigationMenuSample.NavigationMenu_XamlTypeInfo.XamlMember(this, "TogglePaneButtonRect", "Windows.Foundation.Rect");
+                userType = (global::NavigationMenuSample.WordpressJSONFeedUniversalApps_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NavigationMenuSample.AppShell");
+                xamlMember = new global::NavigationMenuSample.WordpressJSONFeedUniversalApps_XamlTypeInfo.XamlMember(this, "TogglePaneButtonRect", "Windows.Foundation.Rect");
                 xamlMember.Getter = get_2_AppShell_TogglePaneButtonRect;
                 xamlMember.SetIsReadOnly();
                 break;
             case "NavigationMenuSample.Views.BasicSubPage.Message":
-                userType = (global::NavigationMenuSample.NavigationMenu_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NavigationMenuSample.Views.BasicSubPage");
-                xamlMember = new global::NavigationMenuSample.NavigationMenu_XamlTypeInfo.XamlMember(this, "Message", "String");
+                userType = (global::NavigationMenuSample.WordpressJSONFeedUniversalApps_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NavigationMenuSample.Views.BasicSubPage");
+                xamlMember = new global::NavigationMenuSample.WordpressJSONFeedUniversalApps_XamlTypeInfo.XamlMember(this, "Message", "String");
                 xamlMember.Getter = get_3_BasicSubPage_Message;
                 xamlMember.Setter = set_3_BasicSubPage_Message;
                 break;
@@ -433,9 +433,9 @@ namespace NavigationMenuSample.NavigationMenu_XamlTypeInfo
 
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    internal class XamlUserType : global::NavigationMenuSample.NavigationMenu_XamlTypeInfo.XamlSystemBaseType
+    internal class XamlUserType : global::NavigationMenuSample.WordpressJSONFeedUniversalApps_XamlTypeInfo.XamlSystemBaseType
     {
-        global::NavigationMenuSample.NavigationMenu_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        global::NavigationMenuSample.WordpressJSONFeedUniversalApps_XamlTypeInfo.XamlTypeInfoProvider _provider;
         global::Windows.UI.Xaml.Markup.IXamlType _baseType;
         bool _isArray;
         bool _isMarkupExtension;
@@ -449,7 +449,7 @@ namespace NavigationMenuSample.NavigationMenu_XamlTypeInfo
         global::System.Collections.Generic.Dictionary<string, string> _memberNames;
         global::System.Collections.Generic.Dictionary<string, object> _enumValues;
 
-        public XamlUserType(global::NavigationMenuSample.NavigationMenu_XamlTypeInfo.XamlTypeInfoProvider provider, string fullName, global::System.Type fullType, global::Windows.UI.Xaml.Markup.IXamlType baseType)
+        public XamlUserType(global::NavigationMenuSample.WordpressJSONFeedUniversalApps_XamlTypeInfo.XamlTypeInfoProvider provider, string fullName, global::System.Type fullType, global::Windows.UI.Xaml.Markup.IXamlType baseType)
             :base(fullName, fullType)
         {
             _provider = provider;
@@ -641,7 +641,7 @@ namespace NavigationMenuSample.NavigationMenu_XamlTypeInfo
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     internal class XamlMember : global::Windows.UI.Xaml.Markup.IXamlMember
     {
-        global::NavigationMenuSample.NavigationMenu_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        global::NavigationMenuSample.WordpressJSONFeedUniversalApps_XamlTypeInfo.XamlTypeInfoProvider _provider;
         string _name;
         bool _isAttachable;
         bool _isDependencyProperty;
@@ -650,7 +650,7 @@ namespace NavigationMenuSample.NavigationMenu_XamlTypeInfo
         string _typeName;
         string _targetTypeName;
 
-        public XamlMember(global::NavigationMenuSample.NavigationMenu_XamlTypeInfo.XamlTypeInfoProvider provider, string name, string typeName)
+        public XamlMember(global::NavigationMenuSample.WordpressJSONFeedUniversalApps_XamlTypeInfo.XamlTypeInfoProvider provider, string name, string typeName)
         {
             _name = name;
             _typeName = typeName;
